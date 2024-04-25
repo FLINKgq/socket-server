@@ -7,11 +7,11 @@ const route = require("./route");
 const { addUser, findUser, getRoomUsers, removeUser } = require("./users");
 
 
-// Использование CORS (Cross-Origin Resource Sharing) для обеспечения доступа к ресурсам с других доменов
+// Использование CORS для обеспечения доступа к ресурсам с других доменов
 app.use(cors({ origin: "*" }));
 app.use(route);
 
-// Создание HTTP сервера на основе Express приложения
+// Создание HTTP сервера на основе Express 
 const server = http.createServer(app);
 
 // Создание объекта Socket.IO и привязка его к HTTP серверу
