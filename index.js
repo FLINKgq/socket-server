@@ -8,7 +8,7 @@ const { addUser, findUser, getRoomUsers, removeUser } = require("./users");
 
 const app = express()
 
-// Использование CORS для обеспечения доступа к ресурсам с других доменов
+
 app.use(cors({ origin: "*" }));
 app.use(route);
 
